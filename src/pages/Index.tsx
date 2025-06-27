@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Search, Play, Calendar, Clock } from "lucide-react";
@@ -137,14 +138,16 @@ const Index = () => {
             <Card key={episode.id} className="group hover:shadow-2xl transition-all duration-300 border-0 shadow-lg bg-white/90 backdrop-blur-sm overflow-hidden hover:bg-white">
               <CardHeader className="p-0">
                 <div className="relative overflow-hidden">
-                  <img
-                    src={episode.thumbnail}
-                    alt={episode.title}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                    <Play className="w-12 h-12 text-white" fill="currentColor" />
-                  </div>
+                  <Link to={`/episode/${episode.id}`}>
+                    <img
+                      src={episode.thumbnail}
+                      alt={episode.title}
+                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300 cursor-pointer"
+                    />
+                    <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                      <Play className="w-12 h-12 text-white" fill="currentColor" />
+                    </div>
+                  </Link>
                   <Badge className="absolute top-3 right-3 bg-black/70 text-white">
                     Episode {episode.id}
                   </Badge>
