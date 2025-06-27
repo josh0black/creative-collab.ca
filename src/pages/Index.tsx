@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Search, Play, Calendar, Clock } from "lucide-react";
@@ -11,23 +10,23 @@ import { Badge } from "@/components/ui/badge";
 const episodes = [
   {
     id: "1",
-    title: "How to Deliver Feedback on Creative Work",
-    description: "Learn effective strategies for giving constructive feedback on creative projects that helps teams improve while maintaining positive relationships.",
+    title: "Defining Success for a Video Project",
+    description: "Before you decide what video you are going to make, you need to know why you are making it. In this week's episode, my cohost Josh Usheroff and I discuss how to define and measure success of video and animation projects. Whether you are a marketer, work at an agency or are a video maker, this episode has some great tips to set your projects up for success.",
     thumbnail: "https://img.youtube.com/vi/sS7A71biEhM/maxresdefault.jpg",
     videoId: "sS7A71biEhM",
     duration: "4:32",
     publishDate: "2024-01-15",
-    tags: ["feedback", "communication", "management"]
+    tags: ["success", "planning", "strategy"]
   },
   {
     id: "2", 
-    title: "The Importance of Reference Material",
-    description: "Discover how proper reference materials can transform your creative projects and streamline the production process.",
+    title: "Giving Effective Feedback",
+    description: "When it comes to giving feedback, are you confident or anxious? Do feel like you have the tools to give effective feedback to get the most out of your video and animation projects? This episode of Creative Collab is primarily for all the marketing folks and agency creatives out there, to help you get the most out of video collabs, but I think there is a lot of good info in here for colleagues as well to give you some best practices for giving good constructive feedback.",
     thumbnail: "https://img.youtube.com/vi/BBxJlUx54k8/maxresdefault.jpg",
     videoId: "BBxJlUx54k8",
     duration: "5:18",
     publishDate: "2024-01-22",
-    tags: ["references", "preparation", "workflow"]
+    tags: ["feedback", "communication", "collaboration"]
   },
   {
     id: "3",

@@ -10,31 +10,31 @@ import { Separator } from "@/components/ui/separator";
 // Episode data with sample transcripts
 const episodeData = {
   "1": {
-    title: "How to Deliver Feedback on Creative Work",
-    description: "Learn effective strategies for giving constructive feedback on creative projects that helps teams improve while maintaining positive relationships.",
+    title: "Defining Success for a Video Project",
+    description: "Before you decide what video you are going to make, you need to know why you are making it. In this week's episode, my cohost Josh Usheroff and I discuss how to define and measure success of video and animation projects. Whether you are a marketer, work at an agency or are a video maker, this episode has some great tips to set your projects up for success.",
     videoId: "sS7A71biEhM",
     duration: "4:32",
     publishDate: "2024-01-15",
-    tags: ["feedback", "communication", "management"],
+    tags: ["success", "planning", "strategy"],
     transcript: [
-      { time: "00:00", speaker: "Noah", text: "Welcome to Creative Collab. Today we're talking about how to deliver feedback on creative work effectively." },
-      { time: "00:15", speaker: "Josh", text: "This is probably one of the most important skills for anyone working with creative teams." },
-      { time: "00:30", speaker: "Noah", text: "The key is to be specific and actionable. Instead of saying 'I don't like it,' explain what specifically needs to change." },
-      { time: "01:00", speaker: "Josh", text: "And always focus on the work, not the person. It's about improving the project, not criticizing the individual." },
-      { time: "01:30", speaker: "Noah", text: "Timing is crucial too. Give feedback when people are ready to receive it, not when you're frustrated." }
+      { time: "00:00", speaker: "Noah", text: "Welcome to Creative Collab. Today we're talking about defining success for video projects before you even start creating." },
+      { time: "00:15", speaker: "Josh", text: "This is probably one of the most overlooked aspects of video production - knowing why you're making the video in the first place." },
+      { time: "00:30", speaker: "Noah", text: "The key is to establish clear, measurable goals upfront. What does success look like for this specific project?" },
+      { time: "01:00", speaker: "Josh", text: "And it's not just about views or engagement. Success could be brand awareness, lead generation, or even internal communication goals." },
+      { time: "01:30", speaker: "Noah", text: "When you define success clearly, every creative decision becomes easier because you have a north star to guide you." }
     ]
   },
   "2": {
-    title: "The Importance of Reference Material",
-    description: "Discover how proper reference materials can transform your creative projects and streamline the production process.",
+    title: "Giving Effective Feedback",
+    description: "When it comes to giving feedback, are you confident or anxious? Do feel like you have the tools to give effective feedback to get the most out of your video and animation projects? This episode of Creative Collab is primarily for all the marketing folks and agency creatives out there, to help you get the most out of video collabs, but I think there is a lot of good info in here for colleagues as well to give you some best practices for giving good constructive feedback.",
     videoId: "BBxJlUx54k8",
     duration: "5:18",
     publishDate: "2024-01-22",
-    tags: ["references", "preparation", "workflow"],
+    tags: ["feedback", "communication", "collaboration"],
     transcript: [
-      { time: "00:00", speaker: "Josh", text: "Reference materials are the foundation of any successful creative project." },
-      { time: "00:20", speaker: "Noah", text: "They help align everyone's vision from the very beginning." },
-      { time: "00:45", speaker: "Josh", text: "When clients provide good references, it saves hours of revision cycles." }
+      { time: "00:00", speaker: "Josh", text: "Giving effective feedback is a skill that can make or break your video projects." },
+      { time: "00:20", speaker: "Noah", text: "Many people feel anxious about giving feedback, but it's essential for getting the best results." },
+      { time: "00:45", speaker: "Josh", text: "The key is to be specific and actionable. Instead of saying 'I don't like it,' explain what specifically needs to change and why." }
     ]
   },
   "3": {
