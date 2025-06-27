@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Search, Play, Calendar, Clock } from "lucide-react";
@@ -23,8 +22,8 @@ const episodes = [
     id: "2", 
     title: "The Importance of Reference Material",
     description: "Discover how proper reference materials can transform your creative projects and streamline the production process.",
-    thumbnail: "https://img.youtube.com/vi/XYZ123/maxresdefault.jpg",
-    videoId: "XYZ123",
+    thumbnail: "https://img.youtube.com/vi/BBxJlUx54k8/maxresdefault.jpg",
+    videoId: "BBxJlUx54k8",
     duration: "5:18",
     publishDate: "2024-01-22",
     tags: ["references", "preparation", "workflow"]
@@ -33,8 +32,8 @@ const episodes = [
     id: "3",
     title: "Managing Client Expectations",
     description: "Essential techniques for setting and managing realistic client expectations throughout the creative process.",
-    thumbnail: "https://img.youtube.com/vi/ABC456/maxresdefault.jpg",
-    videoId: "ABC456",
+    thumbnail: "https://img.youtube.com/vi/eJ1fKgMxpNc/maxresdefault.jpg",
+    videoId: "eJ1fKgMxpNc",
     duration: "4:45",
     publishDate: "2024-01-29",
     tags: ["clients", "expectations", "communication"]
@@ -43,8 +42,8 @@ const episodes = [
     id: "4",
     title: "Budgeting for Motion Graphics Projects",
     description: "A comprehensive guide to creating accurate budgets for motion graphics and video projects.",
-    thumbnail: "https://img.youtube.com/vi/DEF789/maxresdefault.jpg",
-    videoId: "DEF789",
+    thumbnail: "https://img.youtube.com/vi/q81dbYWMP94/maxresdefault.jpg",
+    videoId: "q81dbYWMP94",
     duration: "6:12",
     publishDate: "2024-02-05",
     tags: ["budgeting", "business", "planning"]
@@ -53,131 +52,11 @@ const episodes = [
     id: "5",
     title: "Timeline Management for Video Production",
     description: "Learn how to create realistic timelines and manage deadlines effectively in video production workflows.",
-    thumbnail: "https://img.youtube.com/vi/GHI012/maxresdefault.jpg",
-    videoId: "GHI012",
+    thumbnail: "https://img.youtube.com/vi/_uFzI_Ud2WQ/maxresdefault.jpg",
+    videoId: "_uFzI_Ud2WQ",
     duration: "5:33",
     publishDate: "2024-02-12",
     tags: ["timelines", "project management", "deadlines"]
-  },
-  {
-    id: "6",
-    title: "Working with Remote Creative Teams",
-    description: "Best practices for collaborating with remote teams and maintaining creative quality across distances.",
-    thumbnail: "https://img.youtube.com/vi/JKL345/maxresdefault.jpg",
-    videoId: "JKL345",
-    duration: "4:58",
-    publishDate: "2024-02-19",
-    tags: ["remote work", "collaboration", "teams"]
-  },
-  {
-    id: "7",
-    title: "Quality Control in Creative Projects",
-    description: "Establish effective quality control processes to ensure consistent, high-quality creative output.",
-    thumbnail: "https://img.youtube.com/vi/MNO678/maxresdefault.jpg",
-    videoId: "MNO678",
-    duration: "5:07",
-    publishDate: "2024-02-26",
-    tags: ["quality control", "processes", "standards"]
-  },
-  {
-    id: "8",
-    title: "Scope Creep: Prevention and Management",
-    description: "Identify, prevent, and manage scope creep to keep your creative projects on track and profitable.",
-    thumbnail: "https://img.youtube.com/vi/PQR901/maxresdefault.jpg",
-    videoId: "PQR901",
-    duration: "4:41",
-    publishDate: "2024-03-05",
-    tags: ["scope creep", "project management", "boundaries"]
-  },
-  {
-    id: "9",
-    title: "Creative Brief Development",
-    description: "Master the art of creating comprehensive creative briefs that set projects up for success from the start.",
-    thumbnail: "https://img.youtube.com/vi/STU234/maxresdefault.jpg",
-    videoId: "STU234",
-    duration: "5:24",
-    publishDate: "2024-03-12",
-    tags: ["creative brief", "planning", "communication"]
-  },
-  {
-    id: "10",
-    title: "Revision Rounds and Feedback Loops",
-    description: "Optimize your revision process to maintain creative integrity while accommodating client feedback.",
-    thumbnail: "https://img.youtube.com/vi/VWX567/maxresdefault.jpg",
-    videoId: "VWX567",
-    duration: "4:36",
-    publishDate: "2024-03-19",
-    tags: ["revisions", "feedback", "iteration"]
-  },
-  {
-    id: "11",
-    title: "Building Long-term Client Relationships",
-    description: "Strategies for nurturing client relationships that lead to repeat business and referrals.",
-    thumbnail: "https://img.youtube.com/vi/YZA890/maxresdefault.jpg",
-    videoId: "YZA890",
-    duration: "5:15",
-    publishDate: "2024-03-26",
-    tags: ["client relationships", "business development", "networking"]
-  },
-  {
-    id: "12",
-    title: "Technical Specifications and Deliverables",
-    description: "Ensure smooth project delivery by properly defining technical specifications and deliverable formats.",
-    thumbnail: "https://img.youtube.com/vi/BCD123/maxresdefault.jpg",
-    videoId: "BCD123",
-    duration: "4:52",
-    publishDate: "2024-04-02",
-    tags: ["technical specs", "deliverables", "formats"]
-  },
-  {
-    id: "13",
-    title: "Creative Team Roles and Responsibilities",
-    description: "Define clear roles and responsibilities to maximize efficiency and minimize conflicts in creative teams.",
-    thumbnail: "https://img.youtube.com/vi/EFG456/maxresdefault.jpg",
-    videoId: "EFG456",
-    duration: "5:03",
-    publishDate: "2024-04-09",
-    tags: ["roles", "responsibilities", "team structure"]
-  },
-  {
-    id: "14",
-    title: "Post-Production Workflow Optimization",
-    description: "Streamline your post-production workflows for better efficiency and consistent quality output.",
-    thumbnail: "https://img.youtube.com/vi/HIJ789/maxresdefault.jpg",
-    videoId: "HIJ789",
-    duration: "5:41",
-    publishDate: "2024-04-16",
-    tags: ["post-production", "workflow", "efficiency"]
-  },
-  {
-    id: "15",
-    title: "Pricing Creative Services Effectively",
-    description: "Learn how to price your creative services competitively while maintaining profitability.",
-    thumbnail: "https://img.youtube.com/vi/KLM012/maxresdefault.jpg",
-    videoId: "KLM012",
-    duration: "6:28",
-    publishDate: "2024-04-23",
-    tags: ["pricing", "business", "profitability"]
-  },
-  {
-    id: "16",
-    title: "Crisis Management in Creative Projects",
-    description: "Prepare for and manage crises that can derail creative projects, from technical failures to client issues.",
-    thumbnail: "https://img.youtube.com/vi/NOP345/maxresdefault.jpg",
-    videoId: "NOP345",
-    duration: "4:29",
-    publishDate: "2024-04-30",
-    tags: ["crisis management", "problem solving", "contingency"]
-  },
-  {
-    id: "17",
-    title: "Scaling Your Creative Business",
-    description: "Strategies for growing your creative business while maintaining quality and team culture.",
-    thumbnail: "https://img.youtube.com/vi/QRS678/maxresdefault.jpg",
-    videoId: "QRS678",
-    duration: "5:56",
-    publishDate: "2024-05-07",
-    tags: ["scaling", "business growth", "team building"]
   }
 ];
 
