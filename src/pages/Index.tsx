@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Search, Play, Calendar, Clock } from "lucide-react";
@@ -201,7 +202,7 @@ const Index = () => {
             <div>
               <h3 className="text-2xl font-bold mb-4">Creative Collab</h3>
               <p className="text-white/80 mb-4">Actionable tips for video & motion graphics collaboration</p>
-              <Button asChild variant="outline" className="border-white/30 text-white hover:bg-white hover:text-slate-800">
+              <Button asChild className="bg-red-600 hover:bg-red-700 text-white border-0 shadow-lg">
                 <a href="https://www.youtube.com/@Creative_Collaborators" target="_blank" rel="noopener noreferrer">
                   Subscribe on YouTube
                 </a>
