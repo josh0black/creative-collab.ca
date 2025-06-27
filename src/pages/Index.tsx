@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Search, Play, Calendar, Clock } from "lucide-react";
@@ -90,41 +89,8 @@ const Index = () => {
                 Produce marketing videos and motion graphics projects with confidence, with the help of these short actionable tips.
               </p>
               <p>
-                If you are a brand marketing director, work in an ad agency, own a creative studio or freelance, these evergreen discussions will give you insight into the soft skills, processes, business and logistics questions for successful and stress-free collaboration for your video and animation projects.
-              </p>
-              <p>
                 Each episode is a roughly five-minute focused conversation on one topic between Noah Wohl the Creative Director at motion graphics studio Handmade Creative and Josh Usheroff co-founder of live action studio Black Box Productions.
               </p>
-            </div>
-            
-            {/* Links Section */}
-            <div className="mt-8 grid md:grid-cols-2 gap-6">
-              <div>
-                <h3 className="text-xl font-semibold text-white mb-4">Studios</h3>
-                <div className="space-y-2">
-                  <a href="https://handmadecreative.ca" target="_blank" rel="noopener noreferrer" 
-                     className="block text-white/80 hover:text-white transition-colors">
-                    Handmade Creative →
-                  </a>
-                  <a href="https://blackboxproductions.tv" target="_blank" rel="noopener noreferrer"
-                     className="block text-white/80 hover:text-white transition-colors">
-                    Black Box Productions →
-                  </a>
-                </div>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-white mb-4">Hosts</h3>
-                <div className="space-y-2">
-                  <a href="https://linkedin.com/in/noah-wohl" target="_blank" rel="noopener noreferrer"
-                     className="block text-white/80 hover:text-white transition-colors">
-                    Noah's LinkedIn →
-                  </a>
-                  <a href="https://linkedin.com/in/joshusheroff" target="_blank" rel="noopener noreferrer"
-                     className="block text-white/80 hover:text-white transition-colors">
-                    Josh's LinkedIn →
-                  </a>
-                </div>
-              </div>
             </div>
           </div>
           
@@ -205,15 +171,47 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-black/20 backdrop-blur-md text-white py-8 mt-16 border-t border-white/20">
-        <div className="container mx-auto px-4 text-center">
-          <h3 className="text-2xl font-bold mb-2">Creative Collab</h3>
-          <p className="text-white/80 mb-4">Actionable tips for video & motion graphics collaboration</p>
-          <Button asChild variant="outline" className="border-white/30 text-white hover:bg-white hover:text-slate-800">
-            <a href="https://www.youtube.com/@Creative_Collaborators" target="_blank" rel="noopener noreferrer">
-              Subscribe on YouTube
-            </a>
-          </Button>
+      <footer className="bg-black/30 backdrop-blur-md text-white py-12 mt-16 border-t border-white/20">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-3 gap-8">
+            <div>
+              <h3 className="text-2xl font-bold mb-4">Creative Collab</h3>
+              <p className="text-white/80 mb-4">Actionable tips for video & motion graphics collaboration</p>
+              <Button asChild variant="outline" className="border-white/30 text-white hover:bg-white hover:text-slate-800">
+                <a href="https://www.youtube.com/@Creative_Collaborators" target="_blank" rel="noopener noreferrer">
+                  Subscribe on YouTube
+                </a>
+              </Button>
+            </div>
+            
+            <div>
+              <h4 className="text-xl font-semibold mb-4">Studios</h4>
+              <div className="space-y-2">
+                <a href="https://handmadecreative.ca" target="_blank" rel="noopener noreferrer" 
+                   className="block text-white/80 hover:text-white transition-colors">
+                  Handmade Creative →
+                </a>
+                <a href="https://blackboxproductions.tv" target="_blank" rel="noopener noreferrer"
+                   className="block text-white/80 hover:text-white transition-colors">
+                  Black Box Productions →
+                </a>
+              </div>
+            </div>
+            
+            <div>
+              <h4 className="text-xl font-semibold mb-4">Hosts</h4>
+              <div className="space-y-2">
+                <a href="https://linkedin.com/in/noah-wohl" target="_blank" rel="noopener noreferrer"
+                   className="block text-white/80 hover:text-white transition-colors">
+                  Noah's LinkedIn →
+                </a>
+                <a href="https://linkedin.com/in/joshusheroff" target="_blank" rel="noopener noreferrer"
+                   className="block text-white/80 hover:text-white transition-colors">
+                  Josh's LinkedIn →
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </footer>
     </div>

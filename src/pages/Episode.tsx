@@ -37,10 +37,10 @@ const Episode = () => {
 
   if (!episode) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 flex items-center justify-center">
+      <div className="min-h-screen bg-gradient-to-br from-blue-600 via-purple-600 to-red-500 flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-2xl font-bold text-slate-800 mb-4">Episode not found</h1>
-          <Button asChild>
+          <h1 className="text-2xl font-bold text-white mb-4">Episode not found</h1>
+          <Button asChild className="bg-white/20 hover:bg-white/30 text-white border-white/30">
             <Link to="/">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Episodes
@@ -68,21 +68,21 @@ const Episode = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-blue-600 via-purple-600 to-red-500">
       {/* Header */}
-      <header className="bg-white/80 backdrop-blur-md border-b border-blue-100 sticky top-0 z-50">
+      <header className="bg-white/10 backdrop-blur-md border-b border-white/20 sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <Button asChild variant="ghost">
+            <Button asChild variant="ghost" className="text-white hover:bg-white/20">
               <Link to="/">
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 All Episodes
               </Link>
             </Button>
-            <h1 className="text-xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+            <h1 className="text-xl font-bold text-white">
               Creative Collab
             </h1>
-            <Button onClick={handleShare} variant="outline" size="sm">
+            <Button onClick={handleShare} variant="outline" size="sm" className="border-white/30 text-white hover:bg-white/20">
               <Share2 className="w-4 h-4 mr-2" />
               Share
             </Button>
@@ -95,7 +95,7 @@ const Episode = () => {
           {/* Main Content */}
           <div className="lg:col-span-2 space-y-8">
             {/* Video Section */}
-            <Card className="overflow-hidden shadow-lg border-0 bg-white/80 backdrop-blur-sm">
+            <Card className="overflow-hidden shadow-lg border-0 bg-white/90 backdrop-blur-sm">
               <CardContent className="p-0">
                 <div className="aspect-video">
                   <iframe
@@ -110,7 +110,7 @@ const Episode = () => {
             </Card>
 
             {/* Episode Info */}
-            <Card className="shadow-lg border-0 bg-white/80 backdrop-blur-sm">
+            <Card className="shadow-lg border-0 bg-white/90 backdrop-blur-sm">
               <CardHeader>
                 <div className="flex items-start justify-between">
                   <div className="flex-1">
@@ -146,7 +146,7 @@ const Episode = () => {
             </Card>
 
             {/* Transcript Section */}
-            <Card className="shadow-lg border-0 bg-white/80 backdrop-blur-sm">
+            <Card className="shadow-lg border-0 bg-white/90 backdrop-blur-sm">
               <CardHeader>
                 <div className="flex items-center justify-between">
                   <CardTitle className="text-xl font-bold text-slate-800">
@@ -168,7 +168,7 @@ const Episode = () => {
                 <div className="space-y-4 max-h-96 overflow-y-auto">
                   {filteredTranscript.map((item, index) => (
                     <div key={index} className="flex gap-4 p-4 hover:bg-slate-50 rounded-lg transition-colors">
-                      <div className="flex-shrink-0 text-sm text-blue-600 font-mono font-medium min-w-[60px]">
+                      <div className="flex-shrink-0 text-sm text-purple-600 font-mono font-medium min-w-[60px]">
                         {item.time}
                       </div>
                       <div className="flex-shrink-0 text-sm font-semibold text-slate-700 min-w-[60px]">
@@ -202,14 +202,14 @@ const Episode = () => {
           {/* Sidebar */}
           <div className="space-y-6">
             {/* More Episodes */}
-            <Card className="shadow-lg border-0 bg-white/80 backdrop-blur-sm">
+            <Card className="shadow-lg border-0 bg-white/90 backdrop-blur-sm">
               <CardHeader>
                 <CardTitle className="text-lg font-bold text-slate-800">
                   More Episodes
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <Button asChild className="w-full" variant="outline">
+                <Button asChild className="w-full bg-gradient-to-r from-blue-600 via-purple-600 to-red-500 hover:from-blue-700 hover:via-purple-700 hover:to-red-600 text-white border-0">
                   <Link to="/">
                     View All Episodes
                   </Link>
@@ -222,7 +222,7 @@ const Episode = () => {
             </Card>
 
             {/* Subscribe CTA */}
-            <Card className="shadow-lg border-0 bg-gradient-to-br from-red-50 to-red-100">
+            <Card className="shadow-lg border-0 bg-white/90 backdrop-blur-sm">
               <CardHeader>
                 <CardTitle className="text-lg font-bold text-slate-800">
                   Never Miss an Episode
@@ -232,7 +232,7 @@ const Episode = () => {
                 <p className="text-sm text-slate-600 mb-4">
                   Subscribe to our YouTube channel for the latest episodes and exclusive content.
                 </p>
-                <Button asChild className="w-full bg-red-600 hover:bg-red-700">
+                <Button asChild className="w-full bg-red-600 hover:bg-red-700 text-white">
                   <a href="https://www.youtube.com/@Creative_Collaborators" target="_blank" rel="noopener noreferrer">
                     Subscribe on YouTube
                   </a>
@@ -242,6 +242,51 @@ const Episode = () => {
           </div>
         </div>
       </div>
+
+      {/* Footer */}
+      <footer className="bg-black/30 backdrop-blur-md text-white py-12 mt-16 border-t border-white/20">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-3 gap-8">
+            <div>
+              <h3 className="text-2xl font-bold mb-4">Creative Collab</h3>
+              <p className="text-white/80 mb-4">Actionable tips for video & motion graphics collaboration</p>
+              <Button asChild variant="outline" className="border-white/30 text-white hover:bg-white hover:text-slate-800">
+                <a href="https://www.youtube.com/@Creative_Collaborators" target="_blank" rel="noopener noreferrer">
+                  Subscribe on YouTube
+                </a>
+              </Button>
+            </div>
+            
+            <div>
+              <h4 className="text-xl font-semibold mb-4">Studios</h4>
+              <div className="space-y-2">
+                <a href="https://handmadecreative.ca" target="_blank" rel="noopener noreferrer" 
+                   className="block text-white/80 hover:text-white transition-colors">
+                  Handmade Creative →
+                </a>
+                <a href="https://blackboxproductions.tv" target="_blank" rel="noopener noreferrer"
+                   className="block text-white/80 hover:text-white transition-colors">
+                  Black Box Productions →
+                </a>
+              </div>
+            </div>
+            
+            <div>
+              <h4 className="text-xl font-semibold mb-4">Hosts</h4>
+              <div className="space-y-2">
+                <a href="https://linkedin.com/in/noah-wohl" target="_blank" rel="noopener noreferrer"
+                   className="block text-white/80 hover:text-white transition-colors">
+                  Noah's LinkedIn →
+                </a>
+                <a href="https://linkedin.com/in/joshusheroff" target="_blank" rel="noopener noreferrer"
+                   className="block text-white/80 hover:text-white transition-colors">
+                  Josh's LinkedIn →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
