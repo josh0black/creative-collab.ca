@@ -57,6 +57,16 @@ const episodes = [
     duration: "5:33",
     publishDate: "2024-02-12",
     tags: ["timelines", "project management", "deadlines"]
+  },
+  {
+    id: "6",
+    title: "Working With Internal Teams",
+    description: "How can working with internal content teams drive growth for your creative studio? And how can combining internal resources with outside expertise maximize the impact of your content? Find out on this week's Creative Collab.",
+    thumbnail: "https://img.youtube.com/vi/z2B5jeDNydY/maxresdefault.jpg",
+    videoId: "z2B5jeDNydY",
+    duration: "5:47",
+    publishDate: "2024-02-19",
+    tags: ["internal teams", "collaboration", "growth"]
   }
 ];
 

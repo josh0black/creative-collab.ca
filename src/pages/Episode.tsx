@@ -72,6 +72,21 @@ const episodeData = {
       { time: "00:00", speaker: "Noah", text: "Timeline management can make or break a video production project." },
       { time: "00:20", speaker: "Josh", text: "Always build in buffer time for unexpected challenges." }
     ]
+  },
+  "6": {
+    title: "Working With Internal Teams",
+    description: "How can working with internal content teams drive growth for your creative studio? And how can combining internal resources with outside expertise maximize the impact of your content? Find out on this week's Creative Collab.",
+    videoId: "z2B5jeDNydY",
+    duration: "5:47",
+    publishDate: "2024-02-19",
+    tags: ["internal teams", "collaboration", "growth"],
+    transcript: [
+      { time: "00:00", speaker: "Noah", text: "Today we're discussing how working with internal teams can drive growth for creative studios." },
+      { time: "00:20", speaker: "Josh", text: "The key is understanding how to combine internal resources with outside expertise." },
+      { time: "00:45", speaker: "Noah", text: "Internal teams bring deep brand knowledge and institutional memory that's invaluable." },
+      { time: "01:10", speaker: "Josh", text: "But external partners can provide specialized skills and fresh perspectives." },
+      { time: "01:35", speaker: "Noah", text: "The magic happens when these two forces work in harmony rather than in competition." }
+    ]
   }
 };
 
