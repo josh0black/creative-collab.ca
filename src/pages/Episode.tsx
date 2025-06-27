@@ -8,25 +8,216 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 
-// Sample episode data with transcript
+// Episode data with sample transcripts
 const episodeData = {
   "1": {
-    title: "The Art of Creative Collaboration",
-    description: "Exploring how creative minds come together to produce extraordinary work. We dive deep into the psychology and practical aspects of collaborative creativity.",
-    videoId: "dQw4w9WgXcQ", // YouTube video ID
-    duration: "24:15",
+    title: "How to Deliver Feedback on Creative Work",
+    description: "Learn effective strategies for giving constructive feedback on creative projects that helps teams improve while maintaining positive relationships.",
+    videoId: "sS7A71biEhM",
+    duration: "4:32",
     publishDate: "2024-01-15",
-    tags: ["creativity", "collaboration", "psychology"],
+    tags: ["feedback", "communication", "management"],
     transcript: [
-      { time: "00:00", speaker: "Host", text: "Welcome to Creative Collab, the show where we explore the fascinating world of creative collaboration. I'm your host, and today we're diving deep into the art of bringing creative minds together." },
-      { time: "00:30", speaker: "Host", text: "Creative collaboration isn't just about working together - it's about creating something that's greater than the sum of its parts. When done right, it can lead to breakthrough innovations and extraordinary results." },
-      { time: "01:15", speaker: "Host", text: "But what makes collaboration truly creative? It starts with understanding that every person brings a unique perspective, a different way of seeing the world and solving problems." },
-      { time: "02:00", speaker: "Host", text: "In today's episode, we'll explore the psychology behind successful creative partnerships, the common pitfalls to avoid, and practical strategies you can implement in your own collaborative work." },
-      { time: "02:45", speaker: "Host", text: "One of the most important aspects of creative collaboration is establishing psychological safety. Team members need to feel comfortable sharing wild ideas, making mistakes, and building on each other's concepts without fear of judgment." },
-      { time: "03:30", speaker: "Host", text: "Research shows that the most innovative teams are those where members feel safe to take risks and express dissenting opinions. This psychological safety is the foundation upon which all great collaborative work is built." }
+      { time: "00:00", speaker: "Noah", text: "Welcome to Creative Collab. Today we're talking about how to deliver feedback on creative work effectively." },
+      { time: "00:15", speaker: "Josh", text: "This is probably one of the most important skills for anyone working with creative teams." },
+      { time: "00:30", speaker: "Noah", text: "The key is to be specific and actionable. Instead of saying 'I don't like it,' explain what specifically needs to change." },
+      { time: "01:00", speaker: "Josh", text: "And always focus on the work, not the person. It's about improving the project, not criticizing the individual." },
+      { time: "01:30", speaker: "Noah", text: "Timing is crucial too. Give feedback when people are ready to receive it, not when you're frustrated." }
     ]
   },
-  // Add more episodes as needed
+  "2": {
+    title: "The Importance of Reference Material",
+    description: "Discover how proper reference materials can transform your creative projects and streamline the production process.",
+    videoId: "XYZ123",
+    duration: "5:18",
+    publishDate: "2024-01-22",
+    tags: ["references", "preparation", "workflow"],
+    transcript: [
+      { time: "00:00", speaker: "Josh", text: "Reference materials are the foundation of any successful creative project." },
+      { time: "00:20", speaker: "Noah", text: "They help align everyone's vision from the very beginning." },
+      { time: "00:45", speaker: "Josh", text: "When clients provide good references, it saves hours of revision cycles." }
+    ]
+  },
+  "3": {
+    title: "Managing Client Expectations",
+    description: "Essential techniques for setting and managing realistic client expectations throughout the creative process.",
+    videoId: "ABC456",
+    duration: "4:45",
+    publishDate: "2024-01-29",
+    tags: ["clients", "expectations", "communication"],
+    transcript: [
+      { time: "00:00", speaker: "Noah", text: "Setting clear expectations upfront is crucial for project success." },
+      { time: "00:25", speaker: "Josh", text: "Under-promise and over-deliver is still the best strategy." }
+    ]
+  },
+  "4": {
+    title: "Budgeting for Motion Graphics Projects",
+    description: "A comprehensive guide to creating accurate budgets for motion graphics and video projects.",
+    videoId: "DEF789",
+    duration: "6:12",
+    publishDate: "2024-02-05",
+    tags: ["budgeting", "business", "planning"],
+    transcript: [
+      { time: "00:00", speaker: "Josh", text: "Budgeting is where many creative projects go wrong from the start." },
+      { time: "00:30", speaker: "Noah", text: "You need to account for every stage of production, not just the creative work." }
+    ]
+  },
+  "5": {
+    title: "Timeline Management for Video Production",
+    description: "Learn how to create realistic timelines and manage deadlines effectively in video production workflows.",
+    videoId: "GHI012",
+    duration: "5:33",
+    publishDate: "2024-02-12",
+    tags: ["timelines", "project management", "deadlines"],
+    transcript: [
+      { time: "00:00", speaker: "Noah", text: "Timeline management can make or break a video production project." },
+      { time: "00:20", speaker: "Josh", text: "Always build in buffer time for unexpected challenges." }
+    ]
+  },
+  "6": {
+    title: "Working with Remote Creative Teams",
+    description: "Best practices for collaborating with remote teams and maintaining creative quality across distances.",
+    videoId: "JKL345",
+    duration: "4:58",
+    publishDate: "2024-02-19",
+    tags: ["remote work", "collaboration", "teams"],
+    transcript: [
+      { time: "00:00", speaker: "Josh", text: "Remote collaboration has become essential in today's creative industry." },
+      { time: "00:25", speaker: "Noah", text: "Clear communication protocols are even more important when working remotely." }
+    ]
+  },
+  "7": {
+    title: "Quality Control in Creative Projects",
+    description: "Establish effective quality control processes to ensure consistent, high-quality creative output.",
+    videoId: "MNO678",
+    duration: "5:07",
+    publishDate: "2024-02-26",
+    tags: ["quality control", "processes", "standards"],
+    transcript: [
+      { time: "00:00", speaker: "Noah", text: "Quality control isn't just about final approval - it's built into every stage." },
+      { time: "00:30", speaker: "Josh", text: "Having clear quality standards saves time and maintains consistency." }
+    ]
+  },
+  "8": {
+    title: "Scope Creep: Prevention and Management",
+    description: "Identify, prevent, and manage scope creep to keep your creative projects on track and profitable.",
+    videoId: "PQR901",
+    duration: "4:41",
+    publishDate: "2024-03-05",
+    tags: ["scope creep", "project management", "boundaries"],
+    transcript: [
+      { time: "00:00", speaker: "Josh", text: "Scope creep is the silent killer of creative project profitability." },
+      { time: "00:20", speaker: "Noah", text: "The key is recognizing it early and addressing it directly with clients." }
+    ]
+  },
+  "9": {
+    title: "Creative Brief Development",
+    description: "Master the art of creating comprehensive creative briefs that set projects up for success from the start.",
+    videoId: "STU234",
+    duration: "5:24",
+    publishDate: "2024-03-12",
+    tags: ["creative brief", "planning", "communication"],
+    transcript: [
+      { time: "00:00", speaker: "Noah", text: "A good creative brief is worth its weight in gold." },
+      { time: "00:25", speaker: "Josh", text: "It's the roadmap that keeps everyone aligned throughout the project." }
+    ]
+  },
+  "10": {
+    title: "Revision Rounds and Feedback Loops",
+    description: "Optimize your revision process to maintain creative integrity while accommodating client feedback.",
+    videoId: "VWX567",
+    duration: "4:36",
+    publishDate: "2024-03-19",
+    tags: ["revisions", "feedback", "iteration"],
+    transcript: [
+      { time: "00:00", speaker: "Josh", text: "Managing revision rounds effectively is crucial for maintaining project momentum." },
+      { time: "00:30", speaker: "Noah", text: "Set clear expectations about how many rounds are included in your project scope." }
+    ]
+  },
+  "11": {
+    title: "Building Long-term Client Relationships",
+    description: "Strategies for nurturing client relationships that lead to repeat business and referrals.",
+    videoId: "YZA890",
+    duration: "5:15",
+    publishDate: "2024-03-26",
+    tags: ["client relationships", "business development", "networking"],
+    transcript: [
+      { time: "00:00", speaker: "Noah", text: "Long-term client relationships are the foundation of a sustainable creative business." },
+      { time: "00:30", speaker: "Josh", text: "It's not just about delivering great work - it's about being a trusted partner." }
+    ]
+  },
+  "12": {
+    title: "Technical Specifications and Deliverables",
+    description: "Ensure smooth project delivery by properly defining technical specifications and deliverable formats.",
+    videoId: "BCD123",
+    duration: "4:52",
+    publishDate: "2024-04-02",
+    tags: ["technical specs", "deliverables", "formats"],
+    transcript: [
+      { time: "00:00", speaker: "Josh", text: "Technical specifications might seem boring, but they prevent major headaches later." },
+      { time: "00:25", speaker: "Noah", text: "Always confirm deliverable formats before you start production." }
+    ]
+  },
+  "13": {
+    title: "Creative Team Roles and Responsibilities",
+    description: "Define clear roles and responsibilities to maximize efficiency and minimize conflicts in creative teams.",
+    videoId: "EFG456",
+    duration: "5:03",
+    publishDate: "2024-04-09",
+    tags: ["roles", "responsibilities", "team structure"],
+    transcript: [
+      { time: "00:00", speaker: "Noah", text: "Clear roles and responsibilities eliminate confusion and improve team efficiency." },
+      { time: "00:30", speaker: "Josh", text: "Everyone should know exactly what they're responsible for and who to go to for decisions." }
+    ]
+  },
+  "14": {
+    title: "Post-Production Workflow Optimization",
+    description: "Streamline your post-production workflows for better efficiency and consistent quality output.",
+    videoId: "HIJ789",
+    duration: "5:41",
+    publishDate: "2024-04-16",
+    tags: ["post-production", "workflow", "efficiency"],
+    transcript: [
+      { time: "00:00", speaker: "Josh", text: "Post-production workflow optimization can dramatically improve your turnaround times." },
+      { time: "00:30", speaker: "Noah", text: "Standardizing your processes makes everything more predictable and efficient." }
+    ]
+  },
+  "15": {
+    title: "Pricing Creative Services Effectively",
+    description: "Learn how to price your creative services competitively while maintaining profitability.",
+    videoId: "KLM012",
+    duration: "6:28",
+    publishDate: "2024-04-23",
+    tags: ["pricing", "business", "profitability"],
+    transcript: [
+      { time: "00:00", speaker: "Noah", text: "Pricing is one of the most challenging aspects of running a creative business." },
+      { time: "00:30", speaker: "Josh", text: "You need to balance being competitive with maintaining healthy profit margins." }
+    ]
+  },
+  "16": {
+    title: "Crisis Management in Creative Projects",
+    description: "Prepare for and manage crises that can derail creative projects, from technical failures to client issues.",
+    videoId: "NOP345",
+    duration: "4:29",
+    publishDate: "2024-04-30",
+    tags: ["crisis management", "problem solving", "contingency"],
+    transcript: [
+      { time: "00:00", speaker: "Josh", text: "Every creative project will face unexpected challenges - the key is being prepared." },
+      { time: "00:25", speaker: "Noah", text: "Having contingency plans in place can turn a crisis into a minor setback." }
+    ]
+  },
+  "17": {
+    title: "Scaling Your Creative Business",
+    description: "Strategies for growing your creative business while maintaining quality and team culture.",
+    videoId: "QRS678",
+    duration: "5:56",
+    publishDate: "2024-05-07",
+    tags: ["scaling", "business growth", "team building"],
+    transcript: [
+      { time: "00:00", speaker: "Noah", text: "Scaling a creative business requires different skills than running a small team." },
+      { time: "00:30", speaker: "Josh", text: "You need to systematize your processes while preserving what makes your work unique." }
+    ]
+  }
 };
 
 const Episode = () => {
