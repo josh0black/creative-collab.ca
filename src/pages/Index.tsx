@@ -91,7 +91,7 @@ const Index = () => {
               </h1>
               <p className="text-white/90 text-lg">Short actionable tips for video & motion graphics projects</p>
             </div>
-            <Button asChild className="bg-red-600 hover:bg-red-700 text-white border-0">
+            <Button asChild className="bg-red-600 hover:bg-red-700 text-white border-0 shadow-lg">
               <a href="https://www.youtube.com/@Creative_Collaborators" target="_blank" rel="noopener noreferrer">
                 <Play className="w-4 h-4 mr-2" />
                 Watch on YouTube
