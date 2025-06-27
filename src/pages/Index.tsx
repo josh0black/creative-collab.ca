@@ -57,18 +57,18 @@ const Index = () => {
   );
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-blue-600 via-purple-600 to-red-500">
       {/* Header */}
-      <header className="bg-white/80 backdrop-blur-md border-b border-blue-100 sticky top-0 z-50">
+      <header className="bg-white/10 backdrop-blur-md border-b border-white/20 sticky top-0 z-50">
         <div className="container mx-auto px-4 py-6">
           <div className="flex items-center justify-between">
             <div>
-              <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+              <h1 className="text-4xl font-bold text-white mb-2">
                 Creative Collab
               </h1>
-              <p className="text-slate-600 mt-1">Unleashing Creative Potential Together</p>
+              <p className="text-white/90 text-lg">Short actionable tips for video & motion graphics projects</p>
             </div>
-            <Button asChild className="bg-red-600 hover:bg-red-700">
+            <Button asChild className="bg-red-600 hover:bg-red-700 text-white border-0">
               <a href="https://www.youtube.com/@Creative_Collaborators" target="_blank" rel="noopener noreferrer">
                 <Play className="w-4 h-4 mr-2" />
                 Watch on YouTube
@@ -79,25 +79,64 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-12">
-        <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-5xl font-bold text-slate-800 mb-6">
-            Explore Creative Collaboration
-          </h2>
-          <p className="text-xl text-slate-600 leading-relaxed mb-8">
-            Dive deep into the world of creative collaboration with our comprehensive video series. 
-            Each episode features full transcripts, making content easily searchable and accessible.
-          </p>
+      <section className="container mx-auto px-4 py-16">
+        <div className="max-w-4xl mx-auto mb-16">
+          <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 mb-12 border border-white/20">
+            <h2 className="text-3xl font-bold text-white mb-6">
+              About the Series
+            </h2>
+            <div className="text-white/90 space-y-4 text-lg leading-relaxed">
+              <p>
+                Produce marketing videos and motion graphics projects with confidence, with the help of these short actionable tips.
+              </p>
+              <p>
+                If you are a brand marketing director, work in an ad agency, own a creative studio or freelance, these evergreen discussions will give you insight into the soft skills, processes, business and logistics questions for successful and stress-free collaboration for your video and animation projects.
+              </p>
+              <p>
+                Each episode is a roughly five-minute focused conversation on one topic between Noah Wohl the Creative Director at motion graphics studio Handmade Creative and Josh Usheroff co-founder of live action studio Black Box Productions.
+              </p>
+            </div>
+            
+            {/* Links Section */}
+            <div className="mt-8 grid md:grid-cols-2 gap-6">
+              <div>
+                <h3 className="text-xl font-semibold text-white mb-4">Studios</h3>
+                <div className="space-y-2">
+                  <a href="https://handmadecreative.ca" target="_blank" rel="noopener noreferrer" 
+                     className="block text-white/80 hover:text-white transition-colors">
+                    Handmade Creative →
+                  </a>
+                  <a href="https://blackboxproductions.tv" target="_blank" rel="noopener noreferrer"
+                     className="block text-white/80 hover:text-white transition-colors">
+                    Black Box Productions →
+                  </a>
+                </div>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-white mb-4">Hosts</h3>
+                <div className="space-y-2">
+                  <a href="https://linkedin.com/in/noah-wohl" target="_blank" rel="noopener noreferrer"
+                     className="block text-white/80 hover:text-white transition-colors">
+                    Noah's LinkedIn →
+                  </a>
+                  <a href="https://linkedin.com/in/joshusheroff" target="_blank" rel="noopener noreferrer"
+                     className="block text-white/80 hover:text-white transition-colors">
+                    Josh's LinkedIn →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
           
           {/* Search */}
           <div className="relative max-w-md mx-auto">
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400 w-5 h-5" />
+            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-white/60 w-5 h-5" />
             <Input
               type="text"
               placeholder="Search episodes..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="pl-10 py-3 text-lg border-2 border-blue-200 focus:border-blue-400 rounded-full"
+              className="pl-10 py-3 text-lg bg-white/20 border-white/30 focus:border-white/50 rounded-full text-white placeholder:text-white/60"
             />
           </div>
         </div>
@@ -105,7 +144,7 @@ const Index = () => {
         {/* Episodes Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredEpisodes.map((episode, index) => (
-            <Card key={episode.id} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg bg-white/80 backdrop-blur-sm overflow-hidden">
+            <Card key={episode.id} className="group hover:shadow-2xl transition-all duration-300 border-0 shadow-lg bg-white/90 backdrop-blur-sm overflow-hidden hover:bg-white">
               <CardHeader className="p-0">
                 <div className="relative overflow-hidden">
                   <img
@@ -122,7 +161,7 @@ const Index = () => {
                 </div>
               </CardHeader>
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold text-slate-800 mb-3 group-hover:text-blue-600 transition-colors">
+                <h3 className="text-xl font-semibold text-slate-800 mb-3 group-hover:text-purple-600 transition-colors">
                   {episode.title}
                 </h3>
                 <p className="text-slate-600 mb-4 line-clamp-3">
@@ -148,7 +187,7 @@ const Index = () => {
                   ))}
                 </div>
 
-                <Button asChild className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700">
+                <Button asChild className="w-full bg-gradient-to-r from-blue-600 via-purple-600 to-red-500 hover:from-blue-700 hover:via-purple-700 hover:to-red-600 text-white border-0">
                   <Link to={`/episode/${episode.id}`}>
                     Watch Episode
                   </Link>
@@ -160,17 +199,17 @@ const Index = () => {
 
         {filteredEpisodes.length === 0 && (
           <div className="text-center py-12">
-            <p className="text-xl text-slate-600">No episodes found matching your search.</p>
+            <p className="text-xl text-white/80">No episodes found matching your search.</p>
           </div>
         )}
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-800 text-white py-8 mt-16">
+      <footer className="bg-black/20 backdrop-blur-md text-white py-8 mt-16 border-t border-white/20">
         <div className="container mx-auto px-4 text-center">
           <h3 className="text-2xl font-bold mb-2">Creative Collab</h3>
-          <p className="text-slate-300 mb-4">Empowering creative collaboration worldwide</p>
-          <Button asChild variant="outline" className="border-white text-white hover:bg-white hover:text-slate-800">
+          <p className="text-white/80 mb-4">Actionable tips for video & motion graphics collaboration</p>
+          <Button asChild variant="outline" className="border-white/30 text-white hover:bg-white hover:text-slate-800">
             <a href="https://www.youtube.com/@Creative_Collaborators" target="_blank" rel="noopener noreferrer">
               Subscribe on YouTube
             </a>
