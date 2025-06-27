@@ -1,5 +1,4 @@
 
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Search, Play, Calendar, Clock } from "lucide-react";
@@ -87,15 +86,13 @@ const Index = () => {
       <header className="bg-white/10 backdrop-blur-md border-b border-white/20 sticky top-0 z-50">
         <div className="container mx-auto px-4 py-6">
           <div className="flex items-center justify-between">
-            <div className="flex-1">
-              <img
-                src="/lovable-uploads/a4ff7c94-cf58-49ac-8f26-3b22304470fc.png"
-                alt="Creative Collab"
-                className="h-16 w-auto max-w-md"
-              />
-              <p className="text-white/90 text-lg mt-2">Short actionable tips for video & motion graphics projects</p>
+            <div>
+              <h1 className="text-4xl font-bold text-white mb-2">
+                Creative Collab
+              </h1>
+              <p className="text-white/90 text-lg">Short actionable tips for video & motion graphics projects</p>
             </div>
-            <Button asChild className="bg-red-600 hover:bg-red-700 text-white border-0 shadow-lg ml-4">
+            <Button asChild className="bg-red-600 hover:bg-red-700 text-white border-0 shadow-lg">
               <a href="https://www.youtube.com/@Creative_Collaborators" target="_blank" rel="noopener noreferrer">
                 <Play className="w-4 h-4 mr-2" />
                 Watch on YouTube
@@ -249,4 +246,3 @@ const Index = () => {
 };
 
 export default Index;
-
